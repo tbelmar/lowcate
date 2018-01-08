@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lowcate</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        
+        <link rel="stylesheet" href="views/styles/template.css">
+        <link rel="stylesheet" href="views/styles/index.css">
+        <link rel="stylesheet" href="views/images/icons/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="topContent">
+            <div class="searchBox">
+                <span class="fa fa-search" id="searchIcon"></span>
+                <input type="text" id="locationsInput" class="searchInput" placeholder="Search location..." autofocus="true" autocomplete="off">
+            </div>
+            <div id="topLinks">
+                <a href="/register" id="registerLink">Register</a>
+            </div>
+        </div>
+        <div id="content">
+            <h1 class="title" id="loginTitle" class="left">LOG IN TO LOWCATE</h1>
+            <form action="/login" method="post">
+                <input type="email" name="email" placeholder="Email" id="emailField" class="inputField" autocomplete="off">
+                <input type="password" name="password" placeholder="Password" id="passwordField" class="inputField" autocomplete="off">
+                <input type="submit" value="Login" id="loginButton">
+                <label id="rememberMe">
+                    <input type="checkbox" id="rememberCheckbox" name="rememberMe">
+                    <p>Remember me</p>
+                </label>
+                <a href="/forgot"><p id="forgotPassword">Forgot password?</p></a>
+            </form>
+            <h1 id="loginFailure" class="red">
+                <%= message %>
+            </h1>
+        </div>
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Index Script -->
+        <script src="views/scripts/index.js"></script>
+    </body>
+</html>

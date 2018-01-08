@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lowcate</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        
+        <link rel="stylesheet" href="../views/styles/template.css">
+        <link rel="stylesheet" href="../views/styles/locator.css">
+        <link rel="stylesheet" href="../views/images/icons/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="map"></div>
+        
+        <div id="content">
+            <div class="searchBox">
+                <span class="fa fa-search"></span>
+                <input type="text" id="locationsInput" class="searchInput" placeholder="Search location..." autofocus="true" autocomplete="off">
+            </div>
+            <a href="/">
+                <div id="homeButton">
+                    Home
+                </div>
+            </a>
+        </div>
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Socket.io -->
+        <script src="/socket.io/socket.io.js"></script>
+        <!-- Google Maps API -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCexMIgDgE40R90nOCTGdVxSzSzxPwFngg&libraries=places&callback=initMap"></script>
+        <!-- Import Functions -->
+        <script src="../views/scripts/functions.js"></script>
+        <!-- Import JavaScript for Locator -->
+        <script src="../views/scripts/locator.js"></script>
+    </body>
+</html>

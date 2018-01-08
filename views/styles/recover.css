@@ -1,0 +1,145 @@
+@media (max-width: 600px) {
+    #content {
+        height: calc(100% - 54px); 
+        border-radius: 0px !important;
+        margin-top: 0 !important;
+    }
+    
+    #title {
+        font-size: 1em !important;   
+    }
+    
+    #loginButton {
+        width: calc(100% - 20px);
+        margin-left: 0px;
+        border-radius: 0px !important;
+    }
+}
+
+body {
+    background-color: rgba(68, 68, 68, 0.5);
+}
+
+a {
+    text-decoration: none;   
+}
+
+#topContent {
+    display: inline-block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(0, 38, 143, 0.7);
+}
+
+#topContent div {
+    display: inline-block;
+}
+
+#topLinks {
+    float: right;
+    margin: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#registerLink, #registerLink:active, #registerLink:visited, #loginLink, #loginLink:active, #loginLink:visited {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#registerLink {
+    margin-left: 10px;   
+}
+
+#registerLink:hover, #loginLink:hover {
+    color: rgba(255, 255, 255, 0.7);   
+}
+
+#content {
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    background-color: rgba(238, 238, 238, 1);
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+#title {
+    color: rgba(68, 68, 68, 1);
+    float: left;
+    margin-left: 5px;
+    font-size: 1empar;
+    font-size: 20px;
+}
+
+#recoverButton {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(0, 38, 143, 0.5);
+    color: rgba(255, 255, 255, 1);
+    float: right;
+    margin: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: rgba(0, 38, 143, 0.02);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+#recoverButton:hover {
+    background-color: rgba(0, 38, 143, 0.3);
+    color: rgba(0, 38, 143, 0.5);
+    border-color: rgba(0, 38, 143, 0.1);
+}
+
+.inputField {
+    position: relative;
+    width: calc(100% - 25px);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.inputField:hover, .inputField:focus {
+    outline: none;
+}
+
+.searchBox {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+}
+
+.searchBox:focus-within {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.searchInput {
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.searchInput:focus {
+    outline: none;
+}s

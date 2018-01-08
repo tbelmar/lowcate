@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lowcate</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        
+        <link rel="stylesheet" href="/views/styles/template.css">
+        <link rel="stylesheet" href="/views/styles/recover.css">
+        <link rel="stylesheet" href="/views/images/icons/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="topContent">
+            <div class="searchBox">
+                <span class="fa fa-search" id="searchIcon"></span>
+                <input type="text" id="locationsInput" class="searchInput" placeholder="Search location..." autofocus="true" autocomplete="off">
+            </div>
+            <div id="topLinks">
+                <a href="/" id="loginLink">Login</a> <a href="/register" id="registerLink">Register</a>
+            </div>
+        </div>
+        <div id="content">
+            <h1 class="title" id="title" class="left">SET NEW PASSWORD</h1>
+            <form id="recoverForm">
+                <input type="password" name="password" placeholder="Password" id="passwordInput" class="inputField" autocomplete="off">
+                <input type="password" placeholder="Confirm Password" id="confirmPassInput" class="inputField" autocomplete="off">
+                <input type="submit" value="Submit" id="recoverButton">
+            </form>
+            <br id="spacer"><br id="spacer">
+        </div>
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Index Script -->
+        <script src="/views/scripts/recover.js"></script>
+    </body>
+</html>

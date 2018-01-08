@@ -1,0 +1,184 @@
+@media (max-width: 600px) {
+    #editableButton, #logoutButton {
+        width: 100%;
+        display: inline-block;
+    }
+    
+    #placesSearchBox {
+        width: 100%!important;
+    }
+    
+    #placesInput {
+        width: auto!important;   
+    }
+    
+    #content {
+        background-color: rgba(255, 255, 255, 1);
+        display: none;
+    }
+    
+    #content div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    #openMenuContent, #closeMenuContent {
+        background-color: rgba(255, 255, 255, 1);
+        border-bottom: solid 1px;
+    }
+    
+    #openMenuContent {
+        display: inline-block;
+        border-right: solid 1px;
+    }
+    
+    #closeMenuContent {
+        display: none;
+        border-left: solid 1px;   
+    }
+}
+
+#map {
+    height: 100%;
+}
+
+#openMenuContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 2em;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+#closeMenuContent {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    font-size: 2em;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+
+#openMenu {
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+
+#content {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.7); 
+}
+
+#content:hover {
+    background-color: rgba(255, 255, 255, 1);  
+}
+
+#content div {
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#content div:focus-within {
+    background-color: rgba(255, 255, 255, 1);   
+}
+
+#editableButton {
+    padding: 5px;   
+    border: 1px solid #999; 
+    text-align: center;
+    padding-left: 10px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    z-index: 5;
+    font-family: 'Roboto','sans-serif';
+}
+
+#editableButton:focus, #logoutButton:focus {
+    outline: none;   
+}
+
+.maps_icons {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.maps_icons img {
+    margin: 5px;
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 15px;
+}
+
+.maps_icons img:hover {
+    transform: scale(1.1, 1.1);
+    margin-bottom: 5px;   
+}
+
+#placesSearchBox {
+    width: 300px;
+}
+
+#placesInput {
+    width: 250px;   
+}
+
+.searchBox {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.searchBox:focus-within {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.searchInput {
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+#userManagement a {
+    text-decoration: none;
+    color: #000;
+}
+
+#logoutButton {
+    font-weight: 700;
+    z-index: 5;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    border-radius: 3px;
+}
+
+.name_taken {
+    color: #FF4136;
+    visibility: hidden;
+    position: absolute;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lowcate</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        
+        <link rel="stylesheet" href="views/styles/template.css">
+        <link rel="stylesheet" href="views/styles/register.css">
+        <link rel="stylesheet" href="views/images/icons/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="topContent">
+            <div class="searchBox">
+                <span class="fa fa-search" id="searchIcon"></span>
+                <input type="text" id="locationsInput" class="searchInput" placeholder="Search location..." autofocus="true" autocomplete="off">
+            </div>
+            <div id="topLinks">
+                <a href="/" id="loginLink">Login</a>
+            </div>
+        </div>
+        <div id="content">
+            <h1 class="title" id="registerTitle" class="left">REGISTER TO LOWCATE</h1>
+            <form action="/register" method="post">
+                <input type="email" name="email" placeholder="Email" id="emailField" class="inputField" autocomplete="off">
+                <input type="password" name="password" placeholder="Password" id="passwordField" class="inputField" autocomplete="off">
+                <input type="submit" value="Register" id="registerButton">
+            </form>
+            <br id="spacer">
+            <h1 id="registerFailure" class="red">
+                <%= message %>
+            </h1>
+        </div>
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Index Script -->
+        <script src="views/scripts/index.js"></script>
+    </body>
+</html>

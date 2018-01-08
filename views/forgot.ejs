@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lowcate</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        
+        <link rel="stylesheet" href="views/styles/template.css">
+        <link rel="stylesheet" href="views/styles/forgot.css">
+        <link rel="stylesheet" href="views/images/icons/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="topContent">
+            <div class="searchBox">
+                <span class="fa fa-search" id="searchIcon"></span>
+                <input type="text" id="locationsInput" class="searchInput" placeholder="Search location..." autofocus="true" autocomplete="off">
+            </div>
+            <div id="topLinks">
+                <a href="/" id="loginLink">Login</a> <a href="/register" id="registerLink">Register</a>
+            </div>
+        </div>
+        <div id="content">
+            <h1 class="title" id="title" class="left">ENTER EMAIL TO RESET PASSWORD</h1>
+            <form action="/forgot" method="post">
+                <input type="email" name="email" id="emailField" placeholder="Email" class="inputField">
+                <input type="submit" value="Reset" id="submitButton">
+            </form>
+            <br id="spacer"><br id="spacer">
+        </div>
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Index Script -->
+        <script src="views/scripts/index.js"></script>
+    </body>
+</html>

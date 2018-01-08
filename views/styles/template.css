@@ -1,0 +1,33 @@
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 600px) {
+    input {
+        -webkit-appearance: none;   
+    }  
+}
+
+a {
+    text-decoration: none;   
+}
+
+
+.right {
+    float: right;   
+}
+
+.left {
+    float: left;   
+}
+
+.red {
+    background-color: #FF4136;
+}
+
+.green {
+    background-color: #2ECC40;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Lowcate</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        
+        <link rel="stylesheet" href="views/styles/template.css">
+        <link rel="stylesheet" href="views/styles/map.css">
+        <link rel="stylesheet" href="views/images/icons/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        
+        <div id="map"></div>
+        
+        <div id="openMenuContent">
+            <span class="fa fa-bars" id="openMenu"></span>
+        </div>
+        <div id="closeMenuContent">
+            <span class="fa fa-times" id="closeMenu"></span>
+        </div>
+        
+        <div id="content">
+            <button id="editableButton" class="red">Editable</button>
+            <div class="searchBox" id="placesSearchBox">
+                <span class="fa fa-search"></span>
+                <input type="text" id="placesInput" class="searchInput" placeholder="Search place..." autocomplete="off">
+            </div>
+            <div class="searchBox">
+                <span class="fa fa-search"></span>
+                <input type="text" id="locationsInput" class="searchInput" placeholder="Search location..." autofocus="true" autocomplete="off">
+            </div>
+            
+            <div id="userManagement" class="right">
+                <a href="logout"><button id="logoutButton"><span class="fa fa-sign-out"></span> Logout</button></a>
+            </div>
+        </div>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Google Maps API -->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCexMIgDgE40R90nOCTGdVxSzSzxPwFngg&libraries=places&callback=initMap"></script>
+        <!-- Import Functions -->
+        <script src="views/scripts/functions.js"></script>
+        <!-- Javascript for Map -->
+        <script src="views/scripts/map.js"></script>
+    </body>
+</html>
