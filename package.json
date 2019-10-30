@@ -17,7 +17,7 @@
     "express-session": "^1.0.4",
     "method-override": "^1.0.2",
     "mongodb": "^2.2.34",
-    "mongoose": "^4.13.9",
+    "mongoose": "^5.7.5",
     "morgan": "^1.0.1",
     "nodemailer": "^4.4.1",
     "passport": "^0.1.18",
