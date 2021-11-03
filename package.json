@@ -24,7 +24,7 @@
     "passport-local": "^1.0.0",
     "stream-replace": "^1.0.0",
     "styliner": "^1.0.3",
-    "validator": "^8.2.0"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
