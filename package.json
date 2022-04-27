@@ -7,7 +7,7 @@
   "description": "Interactive location marker and descriptor",
   "main": "server.js",
   "dependencies": {
-    "async": "^2.6.0",
+    "async": "^2.6.4",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.0.2",
     "connect-flash": "^0.1.1",
